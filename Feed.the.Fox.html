@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head><title>Feed the Fox</title></head>
+<body>
+<p id="demo" style="color: red; font-size: 40px"></p>
+<script type="text/javascript">
+ 
+
+var feed = true;
+var foxEats = Math.floor(Math.random()*2);
+var chickenPies = Math.floor(Math.random()*5+3);
+var hunger = 7;
+confirm ("Start feeding the fox?");
+
+while (feed) {
+    if (foxEats) {
+        document.write("<p>You fed the fox " + chickenPies + " chicken pies.");
+      
+       
+        hunger-=chickenPies;
+        
+        if (hunger<0) {
+            document.write("<p>The fox ate " + hunger + " pies too many. You've overfed your fox! It's fat, rolling in the garden.");
+         feed=false;  
+   
+} else { 
+    
+   foxEats = Math.floor(Math.random()*2);}
+   
+    }else{
+        
+        document.write("<p>The fox loved your pies and it could eat another " + hunger);
+         confirm ("Feed more?");
+          foxEats = Math.floor(Math.random()*2);
+
+}
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
