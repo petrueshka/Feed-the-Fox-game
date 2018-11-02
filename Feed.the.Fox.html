@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head><title>Feed the Fox</title></head>
 <body>
-<p id="demo" style="color: red; font-size: 40px"></p>
+<p id="demo" style="color: red; font-size: 40px">Feed the Fox Game</p>
 <script type="text/javascript">
  
 
@@ -13,13 +13,13 @@ confirm ("Start feeding the fox?");
 
 while (feed) {
     if (foxEats) {
-        document.write("<p>You fed the fox " + chickenPies + " chicken pies.");
+        document.write("You fed the fox " + chickenPies + " chicken pies.");
       
        
         hunger-=chickenPies;
         
         if (hunger<0) {
-            document.write("<p>The fox ate " + hunger + " pies too many. You've overfed your fox! It's fat, rolling in the garden.");
+            document.write("<p>The fox ate " + hunger + " pies too many. You've overfed your fox! It's fat, rolling in the garden.</p>");
          feed=false;  
    
 } else { 
@@ -28,7 +28,7 @@ while (feed) {
    
     }else{
         
-        document.write("<p>The fox loved your pies and it could eat another " + hunger);
+        document.write("The fox loved your pies and it could eat another " + hunger);
          confirm ("Feed more?");
           foxEats = Math.floor(Math.random()*2);
 
